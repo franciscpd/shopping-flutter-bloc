@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:shopping_bloc/blocs/cart.block.dart';
 import 'package:shopping_bloc/ui/android/pages/cart.page.dart';
 import 'package:shopping_bloc/ui/android/pages/home.page.dart';
+import 'package:shopping_bloc/ui/android/pages/account.page.dart';
 
 class TabsPage extends StatelessWidget {
   @override
@@ -14,9 +15,7 @@ class TabsPage extends StatelessWidget {
         children: <Widget>[
           HomePage(),
           CartPage(),
-          Container(
-            color: Colors.green,
-          ),
+          AccountPage(),
         ],
       ),
       bottomNavigationBar: new TabBar(
