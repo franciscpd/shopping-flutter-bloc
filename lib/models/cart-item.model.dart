@@ -1,13 +1,13 @@
-class CartItem {
+class CartItemModel {
   String id;
   String title;
   int quantity;
   double price;
   String image;
 
-  CartItem({this.id, this.title, this.quantity, this.price, this.image});
+  CartItemModel({this.id, this.title, this.quantity, this.price, this.image});
 
-  CartItem.fromJson(Map<String, dynamic> json) {
+  CartItemModel.fromJson(Map<String, dynamic> json) {
     id = json['id'];
     title = json['title'];
     quantity = json['quantity'];
